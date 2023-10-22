@@ -1,0 +1,100 @@
+.timerContainer{
+    width: 100%;
+    height: 100%;
+    background: #091921;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.countdown_container{
+    width: auto;
+    display: flex;
+    height: auto;
+    gap: 3rem;
+    align-items: center;
+    padding: 2rem 5rem;
+    border-radius: 30px;
+    box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
+                inset 0 -15px 15px rgba(255,255,255,0.05),
+                0 15px 15px rgba(0,0,0,0.3),
+                inset 0 15px 15px rgba(0,0,0,0.3)
+}
+.box{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: .6rem;
+    cursor: pointer;
+}
+.box .timerCount{
+    font-size: 5rem;
+    color: #ff105a;
+}
+.box .timerCountLabel{
+    margin-bottom: 20px;
+    /* color: #ff105a; */
+    color: white;
+}
+.input_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.timer_input{
+    width: 30%;
+    height: 55px;
+    border: 1px solid red;
+    padding: 0 1.2rem;
+    font-size: 18px;
+    background: transparent;
+    border: 4px solid #091921;
+    border-radius: 2rem;
+    outline: none;
+    box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
+                inset 0 -15px 15px rgba(255,255,255,0.05),
+                0 15px 15px rgba(0,0,0,0.3),
+                inset 0 15px 15px rgba(0,0,0,0.3);
+    color: #ff105a;
+    text-transform: capitalize;
+    transition: .3s all;
+}
+.input_container button{
+    width: 180px;
+    height: 46px;
+    border: 3px solid #ff105a;
+    background: transparent;
+    border-radius: 2rem ;
+    font-size: 20px;
+    color: #ff105a;
+    transition: .3s all;
+}
+.input_container button:hover{
+    background: #ff105a;
+    color: #091921;
+}
+.timer_input:hover{
+    border: 4px solid #ff105a;
+    color: #ff105a;
+}
+@media screen and (max-width:756px) {
+    .countdown_container{
+        width: 70%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .timer_input{width: 85%;}
+    .box .timerCount{
+        font-size: 2.6rem;
+    }
+    .box .timerCountLabel{
+        margin-bottom: 5px;
+    }
+}

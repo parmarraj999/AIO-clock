@@ -1,0 +1,6 @@
+green = B5FF00
+pink = FF8FEA
+bg grey = 2D2D2D
+small card grey = 3F3F3F
+blue = 0560E2
+text grey = 848484
